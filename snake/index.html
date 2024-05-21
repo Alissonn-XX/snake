@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobra</title>
+    <link rel="shortcut icon" href="./image/favicon_snake.png"" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="container container-snake">
+
+            <header class="row m-1 justify-content-center">
+              <div class="col-sm-12 col-md-9 container-header">
+                <div class="header">
+                     <p class="m-0 text-center">Tempo de Jogo: <span>00:00:00</span></p>
+                     <div class="d-flex justify-content-evenly align-items-center">
+                       <p class="me-2">Sua Pontuação:<span>00</span></p>
+                       <p class="me-2">Recorde Atual:<span>00</span></p>
+                     </div>
+                </div>
+              </div>
+            </header>
+
+            <main class="row m-1 justify-content-center main-container">
+              <div class="col-sm-12 col-md-9 container-main">
+                <div class="mainPrincipal">
+                 <canvas id="canvas-tela">
+
+                 </canvas>
+                </div>
+                <svg id="controle" viewBox="0 0 140 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M70 136L97.7128 100.75H42.2872L70 136Z" fill="black" fill-opacity="0.2"/>
+                  <path d="M70 0L42.2872 35.25L97.7128 35.25L70 0Z" fill="black" fill-opacity="0.2"/>
+                  <path d="M139.533 68.0002L103.133 42.0499V94.0118L139.533 68.0002Z" fill="black" fill-opacity="0.2"/>
+                  <path d="M0.420898 67.3535L36.8552 93.3038L36.8552 41.3419L0.420898 67.3535Z" fill="black" fill-opacity="0.2"/>
+                  <ellipse cx="70.1636" cy="66.9186" rx="19.1636" ry="17.9186" fill="black" fill-opacity="0.2"/>
+                </svg>                  
+              </div>
+            </main>
+            
+            <footer class="row m-1 justify-content-center container-footer">
+              <div class="col-sm-12 col-md-9">
+                <div class="footer">
+                  <p>
+                    <button type="button">Menu</button>
+                    <button type="button">Modo</button>
+                  </p>
+                  <!-- <svg id="menu-footer" viewBox="0 0 341 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="170" cy="50" r="35" fill="#b2b2b2"/>
+                  </svg>   -->
+                </div>
+              </div>
+            </footer>
+            
+        </div>
+    </body>
+    <script src="/snake/index.js" defer></script>
+</html>
