@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobra</title>
+    <link rel="shortcut icon" href="./image/favicon_snake.png"" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <body>
+     
+        <div class="container-snake" data-js="conteiner-snake">
+          <div class="iniciar">
+            <div class="iniciar-play-game">
+               <h1>JOGO DA COBRINHA</h1>
+               <div class="play-game"></div>
+             </div>
+             <div class="card efeito-vidro">
+               <button class="card-itens" type="button" data-js="play-game">INICIAR</button>
+               <label  class="card-itens" for="nivel-jogo" data-js="label-nivel">NÍVEL DO JOGO</label>
+               <input type="checkbox" id="nivel-jogo"></input>
+               <div class="select-niveis">
+                <select data-js="niveis-jogo">
+                  <option value="" selected></option>
+                  <option value="FÁCIL">FÁCIL *</option>
+                  <option value="MÉDIO">MÉDIO</option>
+                  <option value="DIFÍCIL">DIFÍCIL</option>
+                </select>
+              </div>
+             </div>
+          </div>
+          <header>
+              <div class="container-titulo">
+                <p class="tempo" data-js="cronometro">Tempo de Jogo: <span>00:00</span></p>
+                <div class="record-pontuacao">
+                  <p>Sua Pontuação:<span data-js="score">0</span></p>
+                  <p >Recorde Atual:<span data-js="recorde">0</span></p>
+                </div>
+              </div>
+          </header>
+          
+          <main>
+            <canvas id="canvas-tela" data-js="canvas-tela" width="300px" height="500px" style="background:#1c1c1c; margin:0; padding: 0;"></canvas>
+          </main>
+          <div data-js="game-over" class="game-over-play-game">
+            <h1>GAME OVER</h1>
+            <div class="game-over-game-imagem"></div>
+            <div class="resumo-game efeito-vidro" data-js="retorno-game">
+              <div class="resumo-game-iten ">
+                <span>RESUMO GAME</span>
+                <p data-js="resumo-tempo">Tempo:<span>00</span></p>
+                <p data-js="resumo-pontos">Pontos:<span>00</span></p>
+                <p data-js="resumo-recorde-novo"></p>
+              </div>
+               <div class="iniciar-game" data-js="play-game">
+                  <button class="card-itens" type="button" data-js="play-game">INICIAR</button>
+               </div>
+            </div>
+          </div>
+        </div>
+    </body>
+        <!-- <svg id="controle" viewBox="0 0 140 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M70 136L97.7128 100.75H42.2872L70 136Z" fill="black" fill-opacity="0.2"/>
+          <path d="M70 0L42.2872 35.25L97.7128 35.25L70 0Z" fill="black" fill-opacity="0.2"/>
+          <path d="M139.533 68.0002L103.133 42.0499V94.0118L139.533 68.0002Z" fill="black" fill-opacity="0.2"/>
+          <path d="M0.420898 67.3535L36.8552 93.3038L36.8552 41.3419L0.420898 67.3535Z" fill="black" fill-opacity="0.2"/>
+          <ellipse cx="70.1636" cy="66.9186" rx="19.1636" ry="17.9186" fill="black" fill-opacity="0.2"/>
+        </svg>                   -->
+    <script src="./index.js" defer></script>
+</html>
