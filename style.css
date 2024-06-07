@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-canvas{width: 100vw; height: 100vh;}
+canvas{width: 100%; height: 100%;}
 #nivel-jogo{display: none;}
 
 .container-snake #controle{
@@ -18,8 +18,8 @@ canvas{width: 100vw; height: 100vh;}
 
 .container-snake{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
