@@ -102,7 +102,7 @@ canvas{width: 100%; height: 100%;}
 @media (300px <= width <= 760px){
   .container-snake #controle{
     position: fixed;
-    bottom: 15px;
+    bottom: 20px;
     right: 15px;
     width: 50%;
     z-index: 500;
@@ -125,7 +125,7 @@ canvas{width: 100%; height: 100%;}
 }
 
 .iniciar-play-game .play-game{
-  margin: -30% 0 0 -5%;
+  margin: -30% 0 0 -0%;
   width: 100%;
   height: 100%;
   background:url(image/snake.png) left no-repeat;
